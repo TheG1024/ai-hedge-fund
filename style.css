@@ -1,0 +1,177 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Using Inter from design principles */
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #F0F2F5; /* Neutral Gray from design principles */
+    color: #0D2C4B; /* Deep Blue for text, provides good contrast on light gray */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+#main-header {
+    background-color: #0D2C4B; /* Deep Blue from design principles */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+#main-header h1 {
+    font-size: 1.8rem; /* From design principles H3-ish */
+    font-weight: 600; /* SemiBold */
+}
+
+/* Container for Flexbox layout of sidebar and main content */
+.container {
+    display: flex;
+    flex: 1; /* Allows container to grow and fill available space */
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 250px; /* As suggested */
+    background-color: #1A3A5A; /* Slightly lighter Deep Blue from design principles */
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+#sidebar nav ul {
+    list-style: none; /* Remove bullet points */
+}
+
+#sidebar nav ul li {
+    margin-bottom: 0.5rem; /* Spacing between items */
+}
+
+#sidebar nav ul li a {
+    color: #E9ECEF; /* Light Gray for links */
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 1rem; /* Padding for touch targets and visual */
+    border-radius: 4px; /* Slightly rounded corners for links */
+    font-size: 1rem; /* 16px */
+}
+
+#sidebar nav ul li a:hover {
+    background-color: #3A7CA5; /* Medium Blue for hover from design principles */
+    color: #FFFFFF;
+}
+
+/* Main Content Styling */
+#main-content {
+    flex: 1; /* Takes up the remaining width */
+    padding: 1.5rem;
+    background-color: #FFFFFF; /* White background for content area */
+}
+
+#main-content h2 {
+    color: #0D2C4B; /* Deep Blue */
+    font-size: 1.5rem; /* H3 from design principles */
+    margin-bottom: 1rem;
+}
+
+.widget-placeholder {
+    background-color: #E9ECEF; /* Light Gray for placeholders */
+    border: 1px dashed #CED4DA; /* Dashed border for placeholders */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333; /* Darker text for placeholders */
+}
+
+/* Market Chart Container Styling */
+#market-chart-container {
+    height: 400px;
+    background-color: #e9e9e9; /* Light gray background */
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem; /* Space below the chart */
+    display: flex; /* For centering text */
+    justify-content: center; /* For centering text */
+    align-items: center; /* For centering text */
+    font-size: 1.2rem; /* Larger placeholder text */
+    color: #777; /* Muted text color */
+}
+
+/* Market Indicators Container Styling */
+#market-indicators-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow indicators to wrap on smaller screens */
+    gap: 1rem; /* Spacing between indicator items */
+    padding: 1rem;
+    background-color: #f9f9f9; /* Slightly different background for the container */
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem; /* Space below the indicators */
+}
+
+.indicator {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    flex-grow: 1; /* Allow indicators to grow and share space */
+    min-width: 180px; /* Minimum width for each indicator */
+    text-align: center;
+}
+
+.indicator span:first-child {
+    font-weight: bold;
+    display: block; /* Make label take full width */
+    margin-bottom: 0.25rem;
+}
+
+/* News Feed Styling */
+#news-feed-container {
+    padding: 1rem;
+    background-color: #fdfdfd; /* Very light background for the news section */
+    border: 1px solid #eee;
+    margin-bottom: 1.5rem; /* Space below the news feed */
+}
+
+#news-feed-container h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.news-list {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0; /* Removes default padding if any */
+}
+
+.news-list li {
+    padding: 0.75rem 0.25rem;
+    border-bottom: 1px solid #eee; /* Separator for news items */
+}
+
+.news-list li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.news-headline {
+    font-weight: bold;
+    display: block; /* Ensure it takes its own line or use flex */
+    margin-bottom: 0.2rem;
+}
+
+.news-source {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Footer Styling */
+#main-footer {
+    background-color: #0D2C4B; /* Deep Blue, consistent with header */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+    /* margin-top: auto; Pushed to bottom by body flex settings */
+}
