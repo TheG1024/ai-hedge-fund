@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Manager - AI Hedge Fund Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <h1>AI Hedge Fund Platform</h1>
+        <!-- Placeholder for other header content like user profile, search, notifications -->
+    </header>
+
+    <div class="container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="sentiment_agent_view.html">Sentiment Agent</a></li>
+                    <li><a href="risk_manager_view.html">Risk Manager</a></li>
+                    <li class="active"><a href="portfolio_manager_view.html">Portfolio Manager</a></li>
+                    <li><a href="#ai-agents">AI Agents (Group)</a></li>
+                    <li><a href="#historical-performance">Historical Performance</a></li>
+                    <li><a href="#settings">Settings/User Controls</a></li>
+                </ul>
+        </nav>
+    </aside>
+
+    <main id="main-content">
+        <h2>Portfolio Manager View</h2>
+
+        <div id="aggregated-signals-section" class="agent-section">
+            <h3>Aggregated Agent Signals</h3>
+            <!-- <p class="placeholder-text">[Placeholder for a table: Asset | Sentiment Agent | Fundamentals Agent | Technical Analyst | Consensus]</p> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Sentiment Signal</th>
+                        <th>Fundamentals Signal</th>
+                        <th>Technicals Signal</th>
+                        <th>Overall Consensus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stock ABC</td>
+                        <td class="placeholder-text">BUY (75%)</td>
+                        <td class="placeholder-text">BUY (80%)</td>
+                        <td class="placeholder-text">HOLD (60%)</td>
+                        <td class="placeholder-text">BUY (Considered)</td>
+                    </tr>
+                    <tr>
+                        <td>Stock XYZ</td>
+                        <td class="placeholder-text">SELL (70%)</td>
+                        <td class="placeholder-text">SELL (65%)</td>
+                        <td class="placeholder-text">SELL (80%)</td>
+                        <td class="placeholder-text">SELL (Strong)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="risk-adjusted-recommendations-section" class="agent-section">
+            <h3>Risk-Adjusted Recommendations</h3>
+            <p class="placeholder-text"><strong>Recommendation for Stock ABC:</strong> Reduced position size for BUY due to market volatility.</p>
+            <p class="placeholder-text"><strong>Recommendation for Stock XYZ:</strong> Proceed with SELL, risk within limits.</p>
+        </div>
+
+        <div id="holdings-trades-section" class="agent-section">
+            <h3>Current Portfolio Holdings</h3>
+            <!-- <p class="placeholder-text">[Placeholder for Holdings Table: Asset | Quantity | Avg. Price | Current Value | P&L]</p> -->
+            <table>
+                <thead>
+                    <tr><th>Asset</th><th>Quantity</th><th>Avg. Price</th><th>Current Value</th><th>Unrealized P&L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Stock ABC</td><td>100</td><td>$150.00</td><td>$15500.00</td><td class="positive-pnl">$500.00</td></tr>
+                    <tr><td>Cash</td><td>-</td><td>-</td><td>$25000.00</td><td>-</td></tr>
+                </tbody>
+            </table>
+            <h3 style="margin-top: 1.5rem;">Recent Executed Trades</h3>
+            <!-- <p class="placeholder-text">[Placeholder for Trades Table: Timestamp | Asset | Type | Quantity | Price]</p> -->
+            <table>
+                <thead>
+                    <tr><th>Timestamp</th><th>Asset</th><th>Type</th><th>Quantity</th><th>Price</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>2024-07-29 10:05:00</td><td>Stock XYZ</td><td>SELL</td><td>200</td><td>$50.20</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="audit-trail-section" class="agent-section">
+            <h3>Audit Trail</h3>
+            <ul class="log-list">
+                <li><span class="log-entry">[2024-07-29 10:05:00] PortfolioManager: Executed SELL on Stock XYZ (200 units @ $50.20) based on strong consensus and risk approval.</span></li>
+                <li><span class="log-entry">[2024-07-29 09:30:00] RiskManager: Approved SELL signal for Stock XYZ. Max exposure limit not breached.</span></li>
+                <li><span class="log-entry">[2024-07-29 09:00:00] TechnicalAnalyst: Signal SELL for Stock XYZ (Confidence: 80%). Pattern: Bearish Engulfing.</span></li>
+            </ul>
+        </div>
+    </main>
+    </div>
+
+    <footer id="main-footer">
+        <p>&copy; 2024 AI Hedge Fund Platform. All rights reserved.</p>
+        <!-- Placeholder for other footer content like quick links -->
+    </footer>
+
+    <!-- Optional: Link to JavaScript file if needed in the future -->
+    <script src="main.js"></script>
+</body>
+</html>

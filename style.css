@@ -303,6 +303,54 @@ body {
     cursor: not-allowed;
 }
 
+/* Portfolio Manager View Specific Styling */
+.agent-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.agent-section th,
+.agent-section td {
+    border: 1px solid #ddd;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    font-size: 0.9rem; /* Slightly smaller for table data */
+}
+
+.agent-section thead th {
+    background-color: #E9ECEF; /* Neutral Gray from design principles */
+    font-weight: bold;
+    color: #0D2C4B; /* Deep Blue from design principles */
+}
+
+.positive-pnl {
+    color: #28A745; /* Green from design principles */
+    font-weight: bold;
+}
+
+.negative-pnl {
+    color: #DC3545; /* Red from design principles */
+    font-weight: bold;
+}
+
+.log-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.log-list li { /* Or .log-entry if that's the class on the span */
+    padding: 0.3rem 0;
+    border-bottom: 1px dotted #eee;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.log-list li:last-child {
+    border-bottom: none;
+}
+
 
 /* Footer Styling */
 #main-footer {
