@@ -164,6 +164,76 @@ body {
     color: #777;
 }
 
+/* Agent View Specific Styling */
+.agent-section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Subtle background */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Rounded corners */
+}
+
+.agent-section h3 {
+    font-size: 1.3rem; /* Slightly larger than default h3 if needed */
+    margin-bottom: 0.75rem;
+    color: #0D2C4B; /* Deep Blue from design principles */
+}
+
+/* Mini Chart Placeholder - existing inline styles are fine, but can be centralized */
+.mini-chart-placeholder {
+    /* height: 100px; background: #f0f0f0; border: 1px solid #ccc; display: flex; justify-content: center; align-items: center; */
+    /* If we want to enforce via CSS rather than inline: */
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-style: italic;
+}
+
+.source-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.source-list li {
+    padding: 0.35rem 0;
+    border-bottom: 1px dotted #eee;
+}
+
+.source-list li:last-child {
+    border-bottom: none;
+}
+
+.source-item {
+    /* Basic styling, can be enhanced later */
+    font-size: 0.9rem;
+}
+
+.signal-value,
+.confidence-value {
+    font-weight: bold;
+}
+
+/* Optional: Specific color for placeholders if not covered by context */
+.placeholder-text {
+    color: #777;
+    font-style: italic;
+}
+
+/* Sidebar Active Link Styling */
+#sidebar nav ul li.active {
+    background-color: #e9ecef; /* Light background highlight for the li (Neutral Gray variant) */
+    border-radius: 4px; /* Match link rounding */
+}
+
+#sidebar nav ul li.active a {
+    font-weight: bold;
+    color: #0D2C4B; /* Deep Blue - primary text color, for strong active state */
+}
+
 /* Footer Styling */
 #main-footer {
     background-color: #0D2C4B; /* Deep Blue, consistent with header */

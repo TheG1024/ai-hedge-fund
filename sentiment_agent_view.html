@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Agent - AI Hedge Fund Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <h1>AI Hedge Fund Platform</h1>
+        <!-- Placeholder for other header content like user profile, search, notifications -->
+    </header>
+
+    <div class="container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li class="active"><a href="sentiment_agent_view.html">Sentiment Agent</a></li>
+                    <li><a href="#ai-agents">AI Agents (Group)</a></li>
+                    <li><a href="#risk-manager">Risk Manager</a></li>
+                    <li><a href="#portfolio-manager">Portfolio Manager</a></li>
+                    <li><a href="#historical-performance">Historical Performance</a></li>
+                    <li><a href="#settings">Settings/User Controls</a></li>
+                </ul>
+        </nav>
+    </aside>
+
+    <main id="main-content">
+        <h2>Sentiment Agent Analysis</h2>
+
+        <div id="sentiment-score-section" class="agent-section">
+            <h3>Current Sentiment Score</h3>
+            <p class="placeholder-text">[Placeholder for Sentiment Gauge/Score, e.g., "Positive (75/100)"]</p>
+        </div>
+
+        <div id="sentiment-trend-section" class="agent-section">
+            <h3>Sentiment Trend</h3>
+            <!-- <p class="placeholder-text">[Placeholder for small sentiment trend chart]</p> -->
+            <div class="mini-chart-placeholder" style="height:100px; background:#f0f0f0; border:1px solid #ccc; display:flex; justify-content:center; align-items:center;">Trend Chart Area</div>
+        </div>
+
+        <div id="sentiment-sources-section" class="agent-section">
+            <h3>Key Sentiment Sources</h3>
+            <ul class="source-list">
+                <li><span class="source-item">News: "Market Optimism Grows" - Source X</span></li>
+                <li><span class="source-item">Social: "Positive chatter on #StockABC" - Platform Y</span></li>
+                <li><span class="source-item">Report: "Sector outlook revised upwards" - Report Z</span></li>
+            </ul>
+        </div>
+
+        <div id="sentiment-signal-section" class="agent-section">
+            <h3>Trading Signal & Confidence</h3>
+            <p><strong>Signal:</strong> <span class="signal-value placeholder-text">[BUY/SELL/HOLD]</span></p>
+            <p><strong>Confidence:</strong> <span class="confidence-value placeholder-text">[e.g., 80%]</span></p>
+        </div>
+
+        <div id="sentiment-rationale-section" class="agent-section">
+            <h3>Rationale</h3>
+            <p class="placeholder-text">[Placeholder for a brief summary explaining the sentiment and signal, e.g., "Overall positive media coverage and social media trends indicate strong upward momentum for the observed assets."]</p>
+        </div>
+    </main>
+    </div>
+
+    <footer id="main-footer">
+        <p>&copy; 2024 AI Hedge Fund Platform. All rights reserved.</p>
+        <!-- Placeholder for other footer content like quick links -->
+    </footer>
+
+    <!-- Optional: Link to JavaScript file if needed in the future -->
+    <script src="main.js"></script>
+</body>
+</html>
