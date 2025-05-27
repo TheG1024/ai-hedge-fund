@@ -89,15 +89,13 @@ body {
 
 /* Market Chart Container Styling */
 #market-chart-container {
-    height: 400px;
-    background-color: #e9e9e9; /* Light gray background */
-    border: 1px solid #ccc;
+    height: 400px; /* Maintain specified height */
+    width: 100%; /* Ensure it takes full available width */
     margin-bottom: 1.5rem; /* Space below the chart */
-    display: flex; /* For centering text */
-    justify-content: center; /* For centering text */
-    align-items: center; /* For centering text */
-    font-size: 1.2rem; /* Larger placeholder text */
-    color: #777; /* Muted text color */
+    padding: 0.5rem; /* Optional: small padding around the chart */
+    background-color: #FFFFFF; /* Match main content background or a very light neutral */
+    border: 1px solid #E9ECEF; /* Light border from design principles */
+    border-radius: 4px; /* Consistent with other elements */
 }
 
 /* Market Indicators Container Styling */

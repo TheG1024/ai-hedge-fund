@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Hedge Fund Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header id="main-header">
@@ -31,7 +32,7 @@
         <p>This area will display key widgets and summaries for the AI Hedge Fund platform.</p>
 
         <div id="market-chart-container">
-            <p>Market Data Chart Placeholder</p>
+            <canvas id="marketChart"></canvas>
         </div>
 
         <div id="market-indicators-container">
@@ -97,6 +98,6 @@
     </footer>
 
     <!-- Optional: Link to JavaScript file if needed in the future -->
-    <!-- <script src="script.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>
