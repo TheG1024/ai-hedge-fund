@@ -234,6 +234,76 @@ body {
     color: #0D2C4B; /* Deep Blue - primary text color, for strong active state */
 }
 
+/* Risk Manager View Specific Styling */
+.metric-item,
+.limit-item {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.metric-item strong,
+.limit-item strong {
+    color: #0D2C4B; /* Deep Blue from design principles */
+}
+
+.alert-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alert-list li { /* Styling for the li wrapper of .alert-item */
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+.alert-item { /* Common styling for all alert items */
+    padding: 0.75rem; /* Consistent padding */
+    border: 1px solid transparent; /* Base border */
+    border-left-width: 5px;
+    border-radius: 4px; /* Match li rounding */
+}
+
+.alert-item.critical {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border-left-color: #dc3545; /* Accent color from design principles (Red) */
+    color: #721c24;
+}
+.alert-item.critical strong {
+    color: #721c24;
+}
+
+.alert-item.warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    border-left-color: #ffc107; /* Accent color from design principles (Yellow/Amber) */
+    color: #856404;
+}
+.alert-item.warning strong {
+    color: #856404;
+}
+
+.alert-item.info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    border-left-color: #17A2B8; /* Accent color from design principles (Teal/Cyan) */
+    color: #0c5460;
+}
+.alert-item.info strong {
+    color: #0c5460;
+}
+
+#stress-testing-section button[disabled] {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+
 /* Footer Styling */
 #main-footer {
     background-color: #0D2C4B; /* Deep Blue, consistent with header */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Manager - AI Hedge Fund Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <h1>AI Hedge Fund Platform</h1>
+        <!-- Placeholder for other header content like user profile, search, notifications -->
+    </header>
+
+    <div class="container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="sentiment_agent_view.html">Sentiment Agent</a></li>
+                    <li class="active"><a href="risk_manager_view.html">Risk Manager</a></li> 
+                    <li><a href="#ai-agents">AI Agents (Group)</a></li>
+                    <li><a href="#portfolio-manager">Portfolio Manager</a></li>
+                    <li><a href="#historical-performance">Historical Performance</a></li>
+                    <li><a href="#settings">Settings/User Controls</a></li>
+                </ul>
+        </nav>
+    </aside>
+
+    <main id="main-content">
+        <h2>Risk Manager Analysis</h2>
+
+        <div id="portfolio-risk-metrics-section" class="agent-section">
+            <h3>Portfolio Risk Metrics</h3>
+            <div class="metric-item"><strong>Value at Risk (VaR):</strong> <span class="placeholder-text">[e.g., $100,000]</span></div>
+            <div class="metric-item"><strong>Conditional VaR (CVaR):</strong> <span class="placeholder-text">[e.g., $150,000]</span></div>
+            <div class="metric-item"><strong>Max Drawdown:</strong> <span class="placeholder-text">[e.g., 15%]</span></div>
+            <div class="metric-item"><strong>Portfolio Volatility:</strong> <span class="placeholder-text">[e.g., 0.8%]</span></div>
+            <!-- Placeholder for a small chart visualizing historical risk metric -->
+            <div class="mini-chart-placeholder" style="height:100px; background:#f0f0f0; border:1px solid #ccc; margin-top:10px; display:flex; justify-content:center; align-items:center;">Historical Risk Metric Chart Area</div>
+        </div>
+
+        <div id="position-limits-section" class="agent-section">
+            <h3>Position Limits</h3>
+            <div class="limit-item"><strong>Overall Portfolio Limit:</strong> <span class="placeholder-text">[e.g., 80% utilized]</span></div>
+            <div class="limit-item"><strong>Tech Sector Exposure:</strong> <span class="placeholder-text">[e.g., 30% of portfolio / Limit 40%]</span></div>
+            <div class="limit-item"><strong>Max Single Stock Concentration:</strong> <span class="placeholder-text">[e.g., 5% / Limit 10%]</span></div>
+            <!-- Could use progress bars here in future -->
+        </div>
+
+        <div id="risk-alerts-section" class="agent-section">
+            <h3>Active Risk Alerts</h3>
+            <ul class="alert-list">
+                <li><span class="alert-item critical"><strong>CRITICAL:</strong> Portfolio VaR nearing threshold.</span></li>
+                <li><span class="alert-item warning"><strong>WARNING:</strong> High correlation detected between Asset A and Asset B.</span></li>
+                <li><span class="alert-item info"><strong>INFO:</strong> Upcoming earnings announcement for Stock XYZ.</span></li>
+            </ul>
+        </div>
+
+        <div id="stress-testing-section" class="agent-section">
+            <h3>Stress Testing / Scenario Analysis</h3>
+            <p class="placeholder-text">[Placeholder for stress test parameters and results summary, e.g., "Scenario: Market Crash -30%. Estimated Impact: -$X.XX"]</p>
+            <button disabled>Run New Scenario</button>
+        </div>
+    </main>
+    </div>
+
+    <footer id="main-footer">
+        <p>&copy; 2024 AI Hedge Fund Platform. All rights reserved.</p>
+        <!-- Placeholder for other footer content like quick links -->
+    </footer>
+
+    <!-- Optional: Link to JavaScript file if needed in the future -->
+    <script src="main.js"></script>
+</body>
+</html>
